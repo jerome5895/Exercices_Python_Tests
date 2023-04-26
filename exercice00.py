@@ -1,6 +1,6 @@
-semaines = ["lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche"]
-
+# Function to print out the seven days of the week, with the corresponding messages
 def calendar():
+    semaines = ["lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche"]
     index = 0
     for jour in semaines:
         index += 1
@@ -11,4 +11,8 @@ def calendar():
     else:
         print(jour, "Repos ce week-end")
 
-print(calendar())
+# Resolution
+result = calendar()
+
+# Function to print out result
+print(result)
