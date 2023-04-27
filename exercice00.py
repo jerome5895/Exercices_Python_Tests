@@ -6,6 +6,10 @@ def calendar():
         index += 1
         if index <= 4:
             print(f"{jour}: Au travail")
+        elif index == 5:
+            print(f"{jour}: Chouette c'est vendredi")
+        elif index == 6 or 7:
+            print(f"{jour}: Repos ce week-end")
 
 # Resolution
 calendar()
