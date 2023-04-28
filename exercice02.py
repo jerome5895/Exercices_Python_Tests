@@ -5,7 +5,7 @@ def smaller(numbers):
     for i in numbers:
         small = i
         for j in numbers:
-            if numbers[j] <= numbers[i]:
+            if int(numbers[j]) <= int(numbers[i]):
                 j == small
     return small
 
@@ -13,4 +13,7 @@ def smaller(numbers):
 numbers = sys.argv[1]
 
 # Print out result
-smaller(numbers)
+result = smaller(numbers)
+
+# Print out result
+print(result)
