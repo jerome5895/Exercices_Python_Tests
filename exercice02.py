@@ -1,20 +1,20 @@
 import sys
 
 # Function to determine the smaller number of a list 
-def smaller(numbers):
-    for i in numbers:
+def smaller(list):
+    for i in list:
         index = i
-        for j in numbers:
-            if numbers[j] < numbers[index]:
+        for j in list:
+            if list[j] < list[index]:
                 index = j
-                numbers[i], numbers[index] == numbers[index], numbers[i]
-    return numbers[index]
+                list[i], list[index] == list[index], list[i]
+    return list[index]
 
 # Globales variables
-numbers = [int(numbers) for numbers in sys.argv[1]]
+list = [int(list) for list in sys.argv[1]]
 
 # Resolution
-result = smaller(numbers)
+result = smaller(list)
 
 # Print out result
 print(result)
